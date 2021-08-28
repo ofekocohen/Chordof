@@ -1,0 +1,80 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 30
+    defaultConfig {
+        applicationId "com.ofekcohen.chordof"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 14
+        versionName "1.014"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.browser:browser:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.firebase:firebase-messaging:21.0.0'
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test:runner:1.3.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.google.firebase:firebase-core:18.0.0'
+    implementation 'com.google.firebase:firebase-firestore:22.0.0'
+    implementation 'com.google.firebase:firebase-storage:19.2.0'
+    implementation 'com.google.firebase:firebase-auth:20.0.0'
+    implementation 'com.firebaseui:firebase-ui-auth:4.3.1'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.facebook.android:facebook-android-sdk:6.1.0'
+    implementation 'com.google.android.gms:play-services-ads:19.5.0'
+    implementation 'com.sun.mail:android-mail:1.6.2'
+    implementation 'com.sun.mail:android-activation:1.6.2'
+    implementation 'com.google.android.play:core:1.8.3'
+
+    implementation 'com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava'
+
+
+    // Toasty
+    implementation 'com.github.GrenderG:Toasty:1.3.0'
+
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    // https://github.com/lzyzsd/CircleProgress
+    implementation 'com.github.lzyzsd:circleprogress:1.2.1'
+
+    // Jsoup - HTML parser
+    implementation 'org.jsoup:jsoup:1.12.2'
+
+    // Volley - JSON parser
+    implementation 'com.android.volley:volley:1.1.0'
+
+    // RunDO  https://github.com/PPartisan/RunDo/blob/master/README.md
+    implementation 'com.werdpressed.partisan:rundo:1.0.5'
+
+    // jMusixMatch - Lyrics Scrapper (musixmatch.com)  https://github.com/sachin-handiekar/jMusixMatch
+    implementation 'com.sachinhandiekar:jMusixMatch:1.1.4'
+
+    // android-youtube-player - Youtube Embeded https://github.com/PierfrancescoSoffritti/android-youtube-player
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5'
+}

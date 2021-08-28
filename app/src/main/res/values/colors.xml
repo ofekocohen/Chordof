@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4865F8</color>
+    <color name="colorPrimaryDark">#4865F8</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="colorSuccess">#4EF848</color>
+    <color name="buttonWhitePressed">#f2f2f2</color>
+    <color name="buttonBluePressed">#FF2744F3</color>
+    <color name="textHighlight">#664865F8</color>
+    <color name="grayColor">#33FFFFFF</color>
+    <color name="colorPrimary_50Precent">#504865F8</color>
+    <color name="ic_launcher_background">#4865F8</color>
+
+    <!-- AdMob -->
+    <color name="gnt_test_background_color">#00F4F4F4</color>
+    <color name="gnt_test_background_color_2">#00A3A3A3</color>
+    <color name="gnt_black">#000000</color>
+    <color name="gnt_white">#FFFFFF</color>
+    <color name="gnt_red">#FF0000</color>
+    <color name="gnt_green">#00FF00</color>
+    <color name="gnt_blue">#4285f4</color>
+    <color name="gnt_ad_green">#3A6728</color>
+    <color name="gnt_gray">#808080</color>
+    <color name="gnt_outline">#E0E0E0</color>
+</resources>

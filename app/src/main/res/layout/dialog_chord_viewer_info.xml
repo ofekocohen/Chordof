@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clChordViewerInfo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tvAuthorTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="מחבר:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tvAuthor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:background="@null"
+        android:focusableInTouchMode="false"
+        android:fontFamily="@font/segoeui"
+        android:gravity="right"
+        android:inputType="textMultiLine"
+        android:text="         "
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/tvAuthorTitle"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvAuthorTitle" />
+
+    <TextView
+        android:id="@+id/tvComposerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="מלחין:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAuthor" />
+
+    <EditText
+        android:id="@+id/tvComposer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:background="@null"
+        android:focusableInTouchMode="false"
+        android:fontFamily="@font/segoeui"
+        android:gravity="right"
+        android:inputType="textMultiLine"
+        android:text="         "
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/tvComposerTitle"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvComposerTitle" />
+
+    <TextView
+        android:id="@+id/tvEasyToneTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="גרסה קלה:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvComposer" />
+
+    <EditText
+        android:id="@+id/tvEasyTone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:background="@null"
+        android:focusableInTouchMode="false"
+        android:fontFamily="@font/segoeui"
+        android:gravity="right"
+        android:inputType="numberSigned"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/tvEasyToneTitle"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvEasyToneTitle" />
+
+    <TextView
+        android:id="@+id/tvYouTubeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text=":YouTube"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEasyTone" />
+
+    <EditText
+        android:id="@+id/tvYouTube"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:background="@null"
+        android:focusableInTouchMode="false"
+        android:fontFamily="@font/segoeui"
+        android:gravity="right"
+        android:inputType="textMultiLine"
+        android:text="         "
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/tvYouTubeTitle"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvYouTubeTitle" />
+
+    <TextView
+        android:id="@+id/tvUploaderTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="מעלה השיר:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvYouTube" />
+
+    <EditText
+        android:id="@+id/tvUploader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:background="@null"
+        android:focusableInTouchMode="false"
+        android:fontFamily="@font/segoeui"
+        android:gravity="right"
+        android:inputType="text"
+        android:text="Chordof"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/tvUploaderTitle"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvUploaderTitle" />
+
+    <TextView
+        android:id="@+id/tvViewsMonthTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="צפיות חודשיות"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUploader"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/tvViewsMonth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:background="@null"
+        android:focusableInTouchMode="false"
+        android:fontFamily="@font/segoeui"
+        android:gravity="right"
+        android:inputType="text"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/tvViewsMonthTitle"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvViewsMonthTitle"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvViewsTotalTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="צפיות"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvViewsMonth"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/tvViewsTotal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:background="@null"
+        android:focusableInTouchMode="false"
+        android:fontFamily="@font/segoeui"
+        android:gravity="right"
+        android:inputType="text"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/tvViewsTotalTitle"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvViewsTotalTitle"
+        android:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

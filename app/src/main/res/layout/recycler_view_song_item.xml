@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clSongsResult"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/big_button_transparent"
+    android:orientation="vertical">
+
+
+    <com.ofekcohen.chordof.Classes.RoundCornerImageView
+        android:id="@+id/imgBackground"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:alpha="1.0"
+        android:scaleType="center"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvSongName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="שם השיר"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:gravity="center"  />
+
+        <TextView
+            android:id="@+id/tvSingerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/segoeui"
+            android:text="שם הזמר"
+            android:textSize="14sp"
+            android:gravity="center"  />
+
+        <TextView
+            android:id="@+id/tvAuthorTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/segoeui"
+            android:text="10"
+            android:textSize="14sp"
+            android:visibility="gone"
+            android:gravity="center"  />
+
+        <ImageView
+            android:id="@+id/imgStar"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_star_border_white_24dp" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvChordToAdd">
+
+        <Spinner
+            android:id="@+id/spinnerBase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#8B9BF8"
+            android:entries="@array/chords_base"
+            android:popupBackground="@color/colorPrimary"
+            android:theme="@style/CustomSpinnerTheme" />
+
+        <Spinner
+            android:id="@+id/spinnerBaseExt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#8B9BF8"
+            android:entries="@array/chords_base_ext"
+            android:popupBackground="@color/colorPrimary"
+            android:theme="@style/CustomSpinnerTheme" />
+
+        <Spinner
+            android:id="@+id/spinnerType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#8B9BF8"
+            android:entries="@array/chords_type"
+            android:popupBackground="@color/colorPrimary"
+            android:theme="@style/CustomSpinnerTheme" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvChordToAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="A"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <Spinner
+            android:id="@+id/spinnerBaseComplex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#8B9BF8"
+            android:entries="@array/chords_base_complex"
+            android:popupBackground="@color/colorPrimary"
+            android:theme="@style/CustomSpinnerTheme" />
+
+        <Spinner
+            android:id="@+id/spinnerBaseExtComplex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#8B9BF8"
+            android:entries="@array/chords_base_ext"
+            android:popupBackground="@color/colorPrimary"
+            android:theme="@style/CustomSpinnerTheme" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="/"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <Button
+        android:id="@+id/btnAddChord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/small_button_white"
+        android:fontFamily="@font/segoeui"
+        android:gravity="center"
+        android:text="הוסף"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/xd_app_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Activities.SuccessfullyUploadedActivity">
+
+    <TextView
+        android:id="@+id/tvSuccessfullyUploaded"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"
+        android:text="השיר עלה בהצלחה!"
+        android:textColor="#4EF848" />
+
+    <TextView
+        android:id="@+id/tvSongName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="שמישהו יעצור אותי"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tvSingerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/segoeui"
+        android:gravity="center"
+        android:text="עדן חסון" />
+
+    <Button
+        android:id="@+id/btnOK"
+        style="@style/WhiteSmallButton"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/segoeui"
+        android:gravity="center"
+        android:layout_marginBottom="70dp"
+        android:text="אישור" />
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="נאשר את השיר בימים הקרובים"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:alpha="0.3"/>
+</LinearLayout>
