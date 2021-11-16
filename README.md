@@ -12,5 +12,5 @@ Many functions are implemented in the application, including:
 
 ## Images
 <p align="center">
-<img src="https://i.postimg.cc/nznGCmK4/1.png" width=206px/><img src="https://i.postimg.cc/28gdnMF8/2.png" width=206px/><img src="https://i.postimg.cc/3wTgcGcs/3.png" width=206px/><img src="https://i.postimg.cc/7Y5MGwzW/4.png" width=206px>
+<img src="https://i.postimg.cc/nznGCmK4/1.png" width=200px/><img src="https://i.postimg.cc/28gdnMF8/2.png" width=200px/><img src="https://i.postimg.cc/3wTgcGcs/3.png" width=200px/><img src="https://i.postimg.cc/7Y5MGwzW/4.png" width=200px>
 </>
